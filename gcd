@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int i,j,k;
+	printf("Enter two numbers:");
+	scanf("%d%d",&i,&j);
+	if(j>i)
+	{
+		k=i;
+		i=j;
+		j=k;
+	}
+	if(j==0)
+ {
+    	k=i%j;
+    	i=j;
+    	j=k;
+	}
+	printf("The gcd is %d",j);
+	return(0);
+}
